@@ -1,0 +1,15 @@
+version: '3'
+services:
+  tomcat-1:
+    image: 'tomcat:8.0'
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/mnt/anil:/usr/local/tomcat/webapps"
+
+  tomcat-2:
+    image: 'tomcat:8.0'
+    ports:
+      - "9090:8080"
+    volumes:
+      - "/mnt/anil:/usr/local/tomcat/webapps"
